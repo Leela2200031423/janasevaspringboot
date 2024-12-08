@@ -1,0 +1,176 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #e5f5e5;
+    height: 100vh; /* Ensures body takes full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    background-color: #006994;
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Makes the sidebar full-screen height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #005b82;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+/* Main content styling */
+.container {
+    display: flex;
+    margin-left: 240px; /* Align main content next to the sidebar */
+    width: calc(100% - 240px);
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling for the main content */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+th {
+    background-color: #006994;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Header and other elements */
+.header h2 {
+    color: #333;
+}
+
+.header p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button styling for potential actions */
+.details-button {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s;
+}
+
+.details-button:hover {
+    background-color: #009acd;
+}
+
+/* Accept and Reject button styling */
+.accept-button, .reject-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.accept-button {
+    background-color: #28a745; /* Green */
+}
+
+.accept-button:hover {
+    background-color: #218838;
+}
+
+.reject-button {
+    background-color: #dc3545; /* Red */
+}
+
+.reject-button:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,197 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #e5f5e5;
+}
+
+/* Sidebar styling */
+/* Sidebar styling */
+.sidebar {
+    width: 220px;
+    background-color: #006994;
+    color: white;
+    padding: 20px;
+    height: 900px;
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nav-item:hover {
+    background-color: #005b82;
+}
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.header h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Card container styling */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: #ccf2cc;
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.card-button {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.card-button:hover {
+    background-color: #009acd;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-group a {
+    font-size: 12px;
+    color: #4a7ebb;
+    text-decoration: none;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+button.register-btn {
+    background-color: #ff8c00;
+}
+
+button.clear-btn {
+    background-color: #dc3545;
+}
+
